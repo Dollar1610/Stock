@@ -1,0 +1,252 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .social a {
+  	margin-right: 25px;
+  }
+  .top_header ul li {
+  	margin-right: 20px;
+  }
+  .main_body {
+  	margin-top: 0px;
+  }
+  .middle_header {
+  	height: 800px;
+  }
+}
+@media only screen and (max-width : 1024px) {
+	.nav_bar {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+	.top_header ul {
+  	display: none;
+  	order: 1;
+  	flex-direction: column;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  }
+  .top_header {
+  	height: auto;
+  	position: relative;
+  }
+  .top_header ul li {
+    margin-top: 10px;
+  }
+  .top_header ul li a {
+  	font-size: 22px;
+  }
+  .logo {
+  	margin:0 auto;
+  	order:2;
+  }
+  .social {
+  	order:3;
+  }
+  .iphone img {
+  	height: 100%;
+  }
+  .inside_header h1 {
+  	font-size: 50px;
+  }
+  .middle_header {
+  	height: 700px;
+  }
+  .climat_cloudy img,
+  .climat_rain img,
+  .climat_sun img {
+  	height: 80%;
+  }
+  .climat_cloudy span,
+  .climat_rain span,
+  .climat_sun span {
+  	font-size: 200px;
+  }
+  .climat_sun span {
+  	top:20px;
+  }
+  .climat_rain span {
+  	top:60px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .top_header ul li {
+  	margin-right: 10%;
+  }
+  .block2 {
+  	justify-content: center;
+  	flex-wrap: wrap;
+  }
+  .block2_1 {
+  	width: 50%;
+  }
+  .block2_1:last-child {
+  	margin-top: 30px;
+  }
+  .iphone img {
+  	height: 90%;
+  }
+  .inside_header > div > button {
+  	margin-left: 0;
+  }
+  .climat_cloudy img,
+  .climat_rain img,
+  .climat_sun img {
+  	height: 70%;
+  }
+  .climat_cloudy span,
+  .climat_sun span,
+  .climat_rain span {
+  	font-size: 180px;
+  	left: 40%;
+  }
+
+}
+@media only screen and (max-width : 900px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .logo {
+  	margin-left: auto;
+  }
+  .inside_header h1{
+  	font-size: 40px;
+  }
+  .inside_header > div > button {
+  	margin-top: 40px;
+  }
+}
+@media only screen and (max-width : 610px) {
+ .scroll_down {
+    order:3;
+    margin-top: 40px;
+ }
+ .iphone {
+    order:2;
+    flex: 1 100%;
+ }
+ .iphone img {
+ 	
+ 	height: 50%;
+ }
+ .inside_header {
+    margin-top: 90px;
+ }
+ .climat_cloudy img,
+  .climat_rain img,
+  .climat_sun img {
+  	height: 50%;
+  }
+  .climat_cloudy span,
+  .climat_sun span,
+  .climat_rain span {
+  font-size: 150px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.social {
+		display: none;
+	}
+	.logo {
+		font-size: 18px;
+		margin:0;
+		margin-left: auto;
+	}
+   .top_header ul li a {
+  	font-size: 18px;
+  }
+  .middle_header {
+  	flex-direction: column;
+  	justify-content: center;
+  	height: auto;
+  }
+  .inside_header {
+  	width: auto;
+  }
+  .iphone {
+  	display: none;
+  }
+  .iphone img {
+  	position: static;
+  }
+  .inside_header .iphone_2 img {
+  	height: 484px;
+  	width: 232px;
+  }
+  .inside_header .iphone_2 {
+  	display: flex;
+  	margin-top: 50px;
+  	flex:1;
+  	position: relative;
+  	justify-content: center;
+  }
+  .part_inside {
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+  }
+  .part_inside button {
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
+  	display: flex;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+@media only screen and (min-width : 1025px) {
+  .nav_bar {
+  	display: none;
+  }
+  .top_header ul {
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
+  	display: flex;
+  }
+}
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
